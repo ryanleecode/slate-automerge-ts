@@ -1,2 +1,5 @@
-tsconfig.json
+test
+types
 src
+node_modules
+.git

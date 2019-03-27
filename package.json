@@ -1,10 +1,11 @@
 {
   "name": "slate-automerge",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "build": "rimraf dist && tsc",
     "test": "jest"
   },
   "author": "",
@@ -14,12 +15,16 @@
     "@types/slate": "^0.44.0",
     "jest": "^24.5.0",
     "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "typescript": "^3.3.3333"
   },
   "dependencies": {
-    "automerge": "^0.10.0",
-    "slate": "^0.44.12"
+    "automerge": "^0.8.0",
+    "slate": "0.37.0"
+  },
+  "peerDependencies": {
+    "slate": "0.37.0"
   }
 }
